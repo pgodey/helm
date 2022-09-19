@@ -47,9 +47,9 @@ fid:
     timeoutSeconds: 5
 zk:
   external: true
-  connectionString: "zookeeper:2181"
+  connectionString: "zookeeper-app:2181"
   clusterName: "fid-cluster"
-  ruok: "http://zookeeper:8080/commands/ruok"
+  ruok: "http://zookeeper-app:8080/commands/ruok"
   userName: "admin"
   password: "secret1234"
 sysctl:
