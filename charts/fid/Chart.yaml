@@ -28,3 +28,4 @@ maintainers:
     url: https://www.radiantlogic.com
 dependencies:
   - name: zookeeper
+    version: 0.1.1
