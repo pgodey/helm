@@ -15,7 +15,7 @@ fid:
   ##
   rootPassword: "Welcome1234"
   ## License for FID
-  ##  
+  ##
   license: "<FID Cluster License>"
   ## Detach from cluster on termination
   ##
@@ -38,7 +38,7 @@ fid:
     targetCPUUtilizationPercentage: 80
     # targetMemoryUtilizationPercentage: 80
     ## Detach from cluster on termination
-    detach: true    
+    detach: true
   livenessProbe:
     initialDelaySeconds: 60
     timeoutSeconds: 5
