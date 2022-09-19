@@ -1,15 +1,12 @@
 # Default values for fid.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
 replicaCount: 1
-
 image:
   repository: radiantone/fid
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
-
 fid:
   ## FID root user name
   ## Default values cn=Directory Manager
@@ -28,7 +25,7 @@ fid:
   readonly: false
   migration:
   ## Migration file that will be imported during first install (export.zip)
-#    url: https://raw.githubusercontent.com/radiantlogic-devops/docker-compose/master/05-monitoring-stack/configs/fid/export.zip
+  # url: https://raw.githubusercontent.com/radiantlogic-devops/docker-compose/master/05-monitoring-stack/configs/fid/export.zip
     url:
   ## Post migration script to be run after install (configure_fid.sh)
     script:
