@@ -30,6 +30,7 @@ jobs:
           if [[ -n "$changed" ]]; then
             echo "::set-output name=changed::true"
           fi
+          helm repo add radiantone https://radiantlogic-devops.github.io/helm
 
       - name: Run chart-testing (lint)
         run: ct lint --target-branch ${{ github.event.repository.default_branch }}
@@ -39,4 +40,4 @@ jobs:
         if: steps.list-changed.outputs.changed == 'true'
 
       - name: Run chart-testing (install)
-        run: ct install
+        run: ct install --helm-extra-set-args "--set fid.license=\{rlib\}x9TJ257Q3K3l0NeRyNrF3KHi3Lvc2tjRxMbZ3cbg53rS1taPwtPTzdbR6InhmNzcwMTX38ThoMDo186guNbQ1Y3T7LzY2crXu9DSppKeo32llpuThJKQ0sWrpI2fqZmXhY6WmZGeoXyfmKCQlKKYro6ypo6gm5mTgpGUmZSfoK/hzMrXu9DSvcrb2b/jyNbTj5KanJGjqYWlmJqZiJmQ1sLmwrvTzNyghQ=="
