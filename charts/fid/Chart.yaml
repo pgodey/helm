@@ -26,3 +26,5 @@ maintainers:
   - name: pgodey
     email: pgodey@radiantlogic.com
     url: https://www.radiantlogic.com
+dependencies:
+  - name: zookeeper
