@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  fid:
+  - apiVersion: v2
+    appVersion: 7.4.2-rc1
+    created: "2022-09-19T19:08:45.184643997Z"
+    description: A Helm chart for FID Kubernetes deployment
+    digest: a6d677f6c0056fd2e9226e1dcdd642cbbd06fc7596cc782fea6e0113a0a2c9b7
+    home: https://github.com/radiantlogic-devops/helm
+    name: fid
+    type: application
+    urls:
+    - https://github.com/pgodey/helm/releases/download/fid-0.1.5/fid-0.1.5.tgz
+    version: 0.1.5
+generated: "2022-09-19T19:08:45.184648997Z"
