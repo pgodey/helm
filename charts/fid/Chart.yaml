@@ -22,3 +22,7 @@ version: 0.1.6
 # follow Semantic Versioning. They should reflect the version the application is using.
 appVersion: 7.4.2-rc1
 home: https://github.com/radiantlogic-devops/helm
+maintainers:
+  - name: RLI DevOps Team
+    mail: cloud@radiantlogic.com
+    url: https://www.radiantlogic.com
