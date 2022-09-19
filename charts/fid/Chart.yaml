@@ -29,3 +29,4 @@ maintainers:
 dependencies:
   - name: zookeeper
     version: 0.1.1
+    repository: https://radiantlogic-devops.github.io/helm
