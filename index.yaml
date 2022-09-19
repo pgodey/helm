@@ -13,6 +13,17 @@ entries:
     version: 0.1.0
   fid:
   - apiVersion: v2
+    appVersion: 7.4.2
+    created: "2022-09-19T19:05:32.552970096Z"
+    description: A Helm chart for FID Kubernetes deployment
+    digest: ddf31f5c00145fef47b3af7870be525568e44221d14e2bea9e68dab211390e13
+    home: https://github.com/radiantlogic-devops/helm
+    name: fid
+    type: application
+    urls:
+    - https://github.com/pgodey/helm/releases/download/fid-0.1.4/fid-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
     appVersion: 7.4.0
     created: "2022-09-19T18:59:54.458304612Z"
     description: A Helm chart for FID Kubernetes deployment
@@ -34,4 +45,4 @@ entries:
     urls:
     - https://github.com/pgodey/helm/releases/download/zookeeper-0.1.1/zookeeper-0.1.1.tgz
     version: 0.1.1
-generated: "2022-09-19T18:59:54.572336716Z"
+generated: "2022-09-19T19:05:32.552979096Z"
