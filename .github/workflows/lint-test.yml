@@ -41,5 +41,10 @@ jobs:
         with:
           config: .release/kind.yaml
 
+      - name: Kind cluster-info
+        run: |
+          kubectl cluster-info --context kind-chart-testing
+          kubectl get nodes --context kind-chart-testing
+
       - name: Run chart-testing (install)
-        run: ct install
+        run: ct install --helm-extra-args="--timeout=900"
