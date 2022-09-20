@@ -30,4 +30,4 @@ dependencies:
   - condition: zk.chartTest
     name: zookeeper
     version: 0.x.x
-    repository: https://radiantlogic-devops.github.io/helm
+    repository: file://../zookeeper
