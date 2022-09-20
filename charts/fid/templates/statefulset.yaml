@@ -77,7 +77,7 @@ spec:
           requests:
             cpu: 100m
             memory: 128Mi        
-        command: ['sh', '-c', 'until $(curl --silent http://$0:8080/commands/is_read_only | grep true); do echo Waiting for zookeeper to be writeable;sleep 5; done; echo zookeeper is writable', '{{ (split ":" .Values.zk.connectionString)._0 }}']
+        command: ['sh', '-c', 'apk add -q --no-cache curl; until $(curl --silent http://$0:8080/commands/is_read_only | grep true); do echo Waiting for zookeeper to be writeable;sleep 5; done; echo zookeeper is writable', '{{ (split ":" .Values.zk.connectionString)._0 }}']
   {{- end }}
   {{- if hasKey .Values.sysctl "enabled" }}
   {{- if .Values.sysctl.enabled }}
