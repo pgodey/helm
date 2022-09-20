@@ -3,6 +3,26 @@ entries:
   fid:
   - apiVersion: v2
     appVersion: 7.4.2-rc1
+    created: "2022-09-20T06:22:16.313093394Z"
+    dependencies:
+    - condition: zk.chartTest
+      name: zookeeper
+      repository: file://../zookeeper
+      version: 0.1.2
+    description: A Helm chart for FID Kubernetes deployment
+    digest: 11eb9e5d0dfe9f0a5947d8b03ebec2faa217e7272489b469f154e8311fe92d86
+    home: https://github.com/radiantlogic-devops/helm
+    maintainers:
+    - email: pgodey@radiantlogic.com
+      name: pgodey
+      url: https://www.radiantlogic.com
+    name: fid
+    type: application
+    urls:
+    - https://github.com/pgodey/helm/releases/download/fid-0.1.7/fid-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 7.4.2-rc1
     created: "2022-09-20T05:17:42.425511702Z"
     dependencies:
     - condition: zk.chartTest
@@ -47,4 +67,4 @@ entries:
     urls:
     - https://github.com/pgodey/helm/releases/download/zookeeper-0.1.2/zookeeper-0.1.2.tgz
     version: 0.1.2
-generated: "2022-09-20T05:17:42.580913503Z"
+generated: "2022-09-20T06:22:16.313105795Z"
