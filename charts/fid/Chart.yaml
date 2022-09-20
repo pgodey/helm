@@ -29,5 +29,5 @@ maintainers:
 dependencies:
   - condition: zk.chartTest
     name: zookeeper
-    version: 0.1.2
-    repository: file://../zookeeper
+    version: 0.x.x
+    repository: https://radiantlogic-devops.github.io/helm
