@@ -47,4 +47,4 @@ jobs:
           kubectl get nodes --context kind-chart-testing
 
       - name: Run chart-testing (install)
-        run: ct install --helm-extra-args="--timeout=15m0s" --helm-extra-set-args="--set=fid.license=\{rlib\}x9TJ257Q3K3l0NeRyNrF3KHi3Lvc2tjRxMbZ3cbg53rS1taPwtPTzdbR6InhmNzcwMTX38ThoMDo186guNbQ1Y3T7LzY2crXu9DSppKeo32llpuThJKQ0sWrpI2fqZmXhY6WmZGeoXyfmKCQlKKYro6ypo6gm5mTgpGUmZSfoK/hzMrXu9DSvcrb2b/jyNbTj5KanJGjqYWlmJqZiJmQ1sLmwrvTzNyghQ=="
+        run: ct install --helm-extra-args="--timeout=15m0s" --helm-extra-set-args="--set=fid.license=\{rlib\}x9TJ257Q3K3l0NeRyNrF3KHi3Lvc2tjRxMbZ3cbg53rS1taPwtPTzdbR6InhmNzcwMTX38ThoMDo186guNbQ1Y3T7LzY2crXu9DSppKeo32llpuThJKQ0sWrpI2fqZmXhY6WmZGeoXyfmKCQlKKYro6ypo6gm5mTgpGUmZSfoK/hzMrXu9DSvcrb2b/jyNbTj5KanJGjqYWlmJqZiJmQ1sLmwrvTzNyghQ==" --helm-extra-set-args="--set=zk.chartTest=true"

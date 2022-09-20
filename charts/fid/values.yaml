@@ -52,6 +52,7 @@ zk:
   ruok: "http://zookeeper-app:8080/commands/ruok"
   userName: "admin"
   password: "secret1234"
+  chartTest: false
 sysctl:
   enabled: false
 imagePullSecrets: []

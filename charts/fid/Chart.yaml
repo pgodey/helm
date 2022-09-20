@@ -27,6 +27,7 @@ maintainers:
     email: pgodey@radiantlogic.com
     url: https://www.radiantlogic.com
 dependencies:
-  - name: zookeeper
+  - condition: zk.chartTest
+    name: zookeeper
     version: 0.1.2
     repository: file://../zookeeper
