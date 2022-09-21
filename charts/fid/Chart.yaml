@@ -30,4 +30,4 @@ dependencies:
   - condition: zk.chartTest
     name: zookeeper
     version: 0.x.x
-    repository: file://../zookeeper
+    repository: https://pgodey.github.io/helm
