@@ -203,5 +203,10 @@ gateway:
 kibana:
   enabled: false
   kibanaURL: "<kibana-service-name>.<namespace>.svc.cluster.local:<kibana-port>"
+# Dependencies are disabled by default
 dependencies:
-  zookeeper: true
+  zookeeper: false
+  prometheus: false
+  grafana: false
+  elasticsearch: false
+  kibana: false
