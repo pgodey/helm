@@ -177,6 +177,11 @@ postgresql:
   fullnameOverride: postgresql
   nodeSelector: {}
 
+pgadmin4:
+  enabled: true
+  fullnameOverride: pgadmin4
+  nodeSelector: {}
+
 zookeeper:
   enabled: true
   fullnameOverride: zookeeper
