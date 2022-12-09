@@ -173,11 +173,11 @@ haproxy:
       server pushgateway prometheus-pushgateway:9091
 
 postgresql:
-  enabled: false
+  enabled: true
   fullnameOverride: postgresql
   nodeSelector: {}
 
 zookeeper:
-  enabled: false
+  enabled: true
   fullnameOverride: zookeeper
   nodeSelector: {}
