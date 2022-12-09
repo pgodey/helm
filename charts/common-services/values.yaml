@@ -171,3 +171,13 @@ haproxy:
     backend pushgateway_backend
       http-request set-path %[path,regsub(^/pushgateway/?,/)]
       server pushgateway prometheus-pushgateway:9091
+
+postgresql:
+  enabled: false
+  fullnameOverride: postgresql
+  nodeSelector: {}
+
+zookeeper:
+  enabled: false
+  fullnameOverride: zookeeper
+  nodeSelector: {}
