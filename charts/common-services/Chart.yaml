@@ -62,4 +62,4 @@ dependencies:
 - name: pgadmin4
   version: 1.13.8
   repository: https://helm.runix.net
-  condition: postgresql.enabled
+  condition: pgadmin4.enabled
