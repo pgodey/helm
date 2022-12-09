@@ -143,6 +143,7 @@ haproxy:
       stats refresh 30s
       stats show-node
       stats uri /stats
+      monitor-uri /healthz
 
       use_backend argocd_backend if { path /argocd } or { path_beg /argocd/ }
       use_backend grafana_backend if { path /grafana } or { path_beg /grafana/ }
