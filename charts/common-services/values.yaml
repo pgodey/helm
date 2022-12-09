@@ -181,6 +181,8 @@ pgadmin4:
   enabled: true
   fullnameOverride: pgadmin4
   nodeSelector: {}
+  env:
+    contextPath: /pgadmin4
 
 zookeeper:
   enabled: true
