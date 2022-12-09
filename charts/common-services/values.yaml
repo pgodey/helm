@@ -187,6 +187,8 @@ pgadmin4:
   enabled: true
   fullnameOverride: pgadmin4
   nodeSelector: {}
+  persistentVolume:
+    enabled: false
 
 zookeeper:
   enabled: true
