@@ -190,6 +190,8 @@ pgadmin4:
     nodeSelector: {}
   persistentVolume:
     enabled: false
+  env:
+    contextPath: /pgadmin4
 
 zookeeper:
   enabled: true
