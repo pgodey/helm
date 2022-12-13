@@ -175,7 +175,6 @@ haproxy:
       http-request set-path %[path,regsub(^/pushgateway/?,/)]
       server pushgateway prometheus-pushgateway:9091
     backend pgadmin4_backend
-      http-request set-path %[path,regsub(^/pgadmin4/?,/)]
       server pgadmin4 pgadmin4:80
 
 postgresql:
@@ -191,7 +190,7 @@ pgadmin4:
   persistentVolume:
     enabled: false
   env:
-    contextPath: /pgadmin4
+    contextPath: "/pgadmin4"
 
 zookeeper:
   enabled: true
