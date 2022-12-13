@@ -153,7 +153,7 @@ haproxy:
       use_backend alertmanager_backend if { path /alertmanager } or { path_beg /alertmanager/ }
       use_backend pushgateway_backend if { path /pushgateway } or { path_beg /pushgateway/ }
       use_backend pgadmin4_backend if { path /pgadmin4 } or { path_beg /pgadmin4/ }
-      
+
     backend argocd_backend
       server argocd argocd-server:80
     backend grafana_backend
