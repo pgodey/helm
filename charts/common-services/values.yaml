@@ -180,13 +180,13 @@ haproxy:
 postgresql:
   enabled: true
   fullnameOverride: postgresql
-  nodeSelector: {}
+  primary:
+    nodeSelector: {}
 
 pgadmin4:
   enabled: true
   fullnameOverride: pgadmin4
-  primary:
-    nodeSelector: {}
+  nodeSelector: {}
   persistentVolume:
     enabled: false
   env:
